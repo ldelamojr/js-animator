@@ -1,0 +1,168 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+	background-image: url("scroll");
+	background-position: top;
+	background-size: cover;
+	/*font-family: ;*/
+}
+
+input {
+	font-family: monospace;
+	font-size: 1em;
+	width: 8px;
+	background-color: brown;
+	color: lightgreen;
+	font-style: bold;
+	text-align: center;
+}
+
+div.user-input {
+	margin-top: 20px;
+	text-align: center;
+}
+
+div.user-input .forLoop {
+	/*margin-left: 150px;*/
+	margin-right: 190px;
+	margin-top: 0;
+	text-align: right;
+
+	/*display: inline;*/
+}
+
+.method-info {
+	text-align: center;
+	margin-top: 0px;
+	font-family: fantasy;
+	font-size: 1.7em;
+	/*border-bottom: outset yellow .3em;*/
+	margin-bottom: 0;
+	border-bottom: 0;
+	padding: 0;
+}
+
+.button {
+	padding: 0;
+	width: 80px;
+	height: 80px;
+	border-radius: 60%;
+	background-color: brown;
+	color: white;
+	border-style: double;  
+	margin-left: 30px;
+	font-size: .7em;
+	font-family: cursive;
+	/*box-shadow: none;*/
+}
+
+.animation-container {
+	font-family: cursive;
+	text-align: center;
+	font-size: 3em;
+	opacity: 0;
+}
+
+#bramble {
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;*/
+	background-image: url("bramble.png");
+	background-position: center;
+	width: 100%;
+	height: 100px;
+	padding: 0;
+	margin-top: 40px;
+	/*background-position: center;*/
+}
+
+#brambleForLoop {
+	margin-top: 5px;
+}
+
+h1 {
+	margin: 0;
+	margin-top: 40px;
+}
+
+h2 {
+	margin: 0;
+}
+
+h3 {
+	margin: 0;
+}
+
+.mover1, .mover2 {
+	opacity: 0;
+	/*position: absolute;*/
+}
+		
+#first-bracket {
+	opacity: 0;
+}
+
+#second-bracket {
+	opacity: 0;
+}
+
+#forLoop {
+	/*text-align: right;*/
+}
+
+#forLoopStart {
+	font-size: .75em;
+	padding: 0;
+}
+
+#forLoopEnd{
+	font-size: .75em;
+	padding: 0;
+	position-left: 10%;
+}
+
+#forLoopIncrement{
+	font-size: .75em;
+	padding: 0;
+}
+
+#forLoopPushButton{
+	position: relative;
+	right: 30%;
+	display: inline;
+}
+
+#forLoopLineTwo {
+	position: relative;
+	right: 19%;
+}
+#forLoopLineThree {
+	position: relative;
+	right: 30%;
+}
+
+.animation-container .loopCloseArray {
+	font-family: monospace;
+	text-align: left;
+	margin-left: 50px;
+	color: black;
+	font-family: cursive;
+}
+
+#loopCloseArray {
+	margin-left: 15px;
+}
+
