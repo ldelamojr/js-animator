@@ -177,7 +177,7 @@ $(".plus").hide();
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 	$("#forLoopPushButton").on('click', function(){
 console.log("hey")
-		if (refreshArray.length === 3) {
+		if (refreshArray.length === 1) {
 			location.reload(true);
 		}else {
 			refreshArray.push("one");
@@ -210,10 +210,18 @@ console.log("hey")
 			var j = 0;
 			for(var i = parseInt( $("#forLoopStart").val() ); i <= parseInt( $("#forLoopEnd").val() ); i = i + parseInt( $("#forLoopIncrement").val() ) ) {
 				// debugger
+				if ( i === parseInt( $("#forLoopStart").val() + parseInt( $("#forLoopIncrement").val() ) )) {
+					var distance = Math.abs(parseInt( $("#forLoopEnd").val() )  -  i);
+				};
+				if ( j === 1 && distance >= Math.abs(parseInt( $("#forLoopStart").val() ) - parseInt( $("#forLoopEnd").val() )) ){
+					alert("WARNING!! POSSIBLY INFINITE LOOP DETECTED. 'break' command triggered. Try other values.");
+					break
+				};
+				
 				j++
 				console.log(j)
 				doSetTimeout(i)
-				debugger
+				// debugger
 				// if( i > parseInt( $("#forLoopEnd").val() ) - 2 * parseInt( $("#forLoopIncrement").val() )) {
 					// $(".comma").last().hide()
 				// }
@@ -224,6 +232,7 @@ console.log("hey")
 			},2500*j)
 		}
 	});
+	console.log("refreshArray")
 });
 // $("#arrayLengthButton").on('click', function(){
 // 	return "one" + "two";
