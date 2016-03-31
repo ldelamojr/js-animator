@@ -21,9 +21,14 @@ body {
 	/*font-family: ;*/
 }
 
+a {
+	font-family: cursive;
+	text-decoration: none;
+}
+
 #lessons {
-	/*text-decoration: none;*/
-	color: black;
+	text-decoration: none;
+	color: gold;
 	font-size: 2em;
 }
 
@@ -46,7 +51,7 @@ input {
 #ROOT {
 	text-align: center;
 	font-size: 3em;
-
+	font-family: fantasy;
 }
 
 div.user-input {
