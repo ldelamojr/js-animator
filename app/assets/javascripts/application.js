@@ -15,6 +15,8 @@
 //= require turbolinks
 //= require_tree .
 
+
+
 console.log("jquery works")
 $(document).ready(function(){
 	var refreshArray = [];

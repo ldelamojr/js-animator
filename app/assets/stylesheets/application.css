@@ -19,12 +19,16 @@ body {
 	background-position: top;
 	background-size: cover;
 	/*font-family: ;*/
+	cursor: url("sharp"), auto;
 }
 
 a {
 	font-family: cursive;
 	text-decoration: none;
+	color: darkred;
+	cursor: url("sharp"), auto;
 }
+
 
 #lessons {
 	text-decoration: none;
@@ -40,6 +44,11 @@ input {
 	color: lightgreen;
 	font-style: bold;
 	text-align: center;
+	cursor: url("sharp"), auto;
+}
+
+button {
+	cursor: url("sharp"), auto;
 }
 
 #HOME {
@@ -90,6 +99,7 @@ div.user-input .forLoop {
 	margin-left: 30px;
 	font-size: .7em;
 	font-family: cursive;
+	cursor: url("silverstar");
 	/*box-shadow: none;*/
 }
 
@@ -197,5 +207,13 @@ h3 {
 
 #loopCloseArray {
 	margin-left: 15px;
+}
+
+#shootmage {
+	z-index: 1;
+}
+
+#idlemage {
+	z-index: 1;
 }
 
